@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Cadastro</title>
+    <meta charset="UTF-8">
+    <meta name="autor" content="Victhor Gladistone"/>
+    <meta name="keywords" content="Casa, Moveis, Planejar, Criar"/>
+    <meta name="description" content="Planejar sua casa, Criar sua casa, fazer do seu jeito"/>
+    <title>Planeje sua Casa</title>
+</head>
+
+<body link="#00008B" alink="#ab5245" vlink="#00008B	">
+        
+        <img src ="img/BannerFigma.png" width="100%" height="100%"
+                                        alt="Banner do site. Mulher segurando um lapis olhando para cima e 
+                                                        uma mão gigante segurando uma casa!"/>
+        
+        <center>
+            
+            <font face = "Bahnschrift Light" color="#E54158" size="4">
+                
+                <strong>
+                    <a href="index.html">HOME</a>
+                    <a href="index.html">FUNÇÕES</a>
+                    <a href="index.html#pag-inspiracoes">INSPIRAÇÕES</a>
+                    <a href="index.html#pag-conhecacomosefaz">COMO SE FAZ</a>
+                    <a href="#">CADASTRO NO SITE</a>
+                </strong>
+                
+            </font>
+            
+        </center>
+
+        <hr color="#E54158" width="100%"/>
+
+        <font face = "Forte" size = "5" color = "#E54158">
+        <h1 align="center">CADASTRO</h1>
+        </font>
+
+        <font face = "Bahnschrift Light" size = "3">
+
+            <strong>
+            <form name="inscricao" method="get" action="cadastro.html">
+
+                <label for="name">Nome: </label> <br/>
+                <input id="nome" name="nome_completo" type="text" size="80"
+                                    placeholder="Digite seu nome completo" required autofocus/>
+                
+                <br/><br/>
+
+                <label for="email">E-mail: </label> <br/>
+                <input focus type="text" name="email" id="email" size="80"
+                                            placeholder="Digite seu e-mail (adalberto@gmail.com)"/>
+                
+                <br/><br/>
+
+                <label for="senha">Senha: </label> <br/>
+                <input type="password" name="senha" id="senha" size="80"
+                                         placeholder="Digite sua senha"/>
+                
+                <br/><br/>
+
+                <label for="celular">Celular: </label> <br/>
+                <input type="tel" name="celular" id="celular" size="80"
+                        placeholder="(99) 99999-9999" pattern="^\(\d{2}\)\d{5}-\d{4}$"/>
+                
+                <br/><br/>
+
+                <label for="data">Data de Nascimento: </label> <br/>
+                <input type="date" name="data" id="data"/>
+
+                <br/><br/>
+
+                <fieldset>
+                    <legend>Gênero</legend>
+                    <input id="masc" type="radio" name="genero" value="M"/>
+                    <label for="masc">Masculino</label><br/>
+                    <input id="fem" type="radio" name="genero" value="F"/>
+                    <label for="fem">Feminino</label><br/>
+                    <input id="outro" type="radio" name="genero" value="O"/>
+                    <label for="outro">Outro</label><br/>
+                </fieldset>
+
+                <br/><br/>
+
+                <label for="tipo">Como você quer fazer? </label> <br/>
+                <select name="tipo" id="tipo" >
+                    <option value="rapido">Rápido e Simples</option>
+                    <option value="3d">Versão 3D da sua casa</option>
+                    <option value="mexer">Mexer em tudo</option>
+                    <option value="arrumar">Conseguir arrumar com ajuda de IA</option>
+                </select>
+
+                <br/><br/>
+
+                <fieldset>
+                    <legend>Onde nos conheceu?</legend>
+                    <input id="insta" type="checkbox" name="origem" value="instagram"/>
+                    <label for="insta">Instagram</label><br/>
+                    <input id="face" type="checkbox" name="origem" value="facebook"/>
+                    <label for="face">Facebook</label><br/>
+                    <input id="yout" type="checkbox" name="origem" value="youtube"/>
+                    <label for="yout">Youtube</label><br/>
+                    <input id="outro" type="checkbox" name="origem" value="outro"/>
+                    <label for="outro">Outro</label><br/>
+                </fieldset>
+
+                <br/><br/>
+
+                <label for="msg">Mensagem:</label><br/>
+                <textarea id="msg" cols="80" rows="6"></textarea>
+                <br/>
+
+                <br/><br/>
+
+                <p>
+                    <input type="submit" name="botao_enviar" value="Enviar"/>
+                    <input type="reset" name="botao_limpar" value="Limpar"/>
+                </p>
+
+            </form>
+            </strong>
+
+        </font>
+
+
+</body>
+</html>
