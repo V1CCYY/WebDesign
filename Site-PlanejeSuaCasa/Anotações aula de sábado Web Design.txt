@@ -1,0 +1,9 @@
+retirou o size do form
+antes dos botoes form, colocar um textarea{ height: 80px;}
+para colocar botoes de cores diferentes, faz um input[type="(submit ou reset)"] duas vezes
+
+colocar o form, no css, a esquerda
+
+Professor disse que vai cair na prova somente as propriedades do css que estão no roteiro e que ele passou em sala.
+
+Professor pediu para avisar que quem quer uma ajuda com o código, mandar mensagem para ele no email dele avisando que quer esse auxílio. Ele estará disponível na Segunda depois das 16hs.

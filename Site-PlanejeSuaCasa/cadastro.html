@@ -12,86 +12,122 @@
 
 </head>
 
-<body">
+<body>
 
-    <img src="img/BannerFigma.png" alt="Banner do site. Mulher segurando um lapis olhando para cima e 
+    <header>
+        
+        <img id="banner" src="img/BannerFigma.png" alt="Banner do site. Mulher segurando um lapis olhando para cima e 
                                                         uma mão gigante segurando uma casa!" />
+    </header>
 
-    <strong>
-        <a href="index.html">HOME</a>
-        <a href="index.html">FUNÇÕES</a>
-        <a href="index.html#pag-inspiracoes">INSPIRAÇÕES</a>
-        <a href="index.html#pag-conhecacomosefaz">COMO SE FAZ</a>
-        <a href="#">CADASTRO NO SITE</a>
-    </strong>
+    <nav>
 
-    <h1>CADASTRO</h1>
+        <a class="a-menu" href="index.html"><span id="negrito">HOME</span></a>
+        <a class="a-menu" href="index.html"><span id="negrito">FUNÇÕES</span></a>
+        <a class="a-menu" href="index.html#pag-inspiracoes"><span id="negrito">INSPIRAÇÕES</span></a>
+        <a class="a-menu" href="index.html#pag-conhecacomosefaz"><span id="negrito">COMO SE FAZ</span></a>
+        <a class="a-menu" href="#"><span id="negrito">CADASTRO</span></a>
 
-    <strong>
-        <form name="inscricao" method="get" action="cadastro.html">
+    </nav>
 
-            <label for="name">Nome: </label>
-            <input id="nome" name="nome_completo" type="text" size="80" placeholder="Digite seu nome completo" required
-                autofocus />
+    <section id="pag-cadastro">
+        <h1>CADASTRO</h1>
 
+            <strong>
 
-            <label for="email">E-mail: </label>
-            <input focus type="text" name="email" id="email" size="80"
-                placeholder="Digite seu e-mail (adalberto@gmail.com)" />
+                <form name="inscricao" method="get" action="cadastro.html">
 
-
-            <label for="senha">Senha: </label>
-            <input type="password" name="senha" id="senha" size="80" placeholder="Digite sua senha" />
+                    <label for="name">Nome: </label>
+                    <input id="nome" name="nome_completo" type="text" size="80" placeholder="Digite seu nome completo" required
+                        autofocus />
 
 
-            <label for="celular">Celular: </label>
-            <input type="tel" name="celular" id="celular" size="80" placeholder="(99) 99999-9999"
-                pattern="^\(\d{2}\)\d{5}-\d{4}$" />
+                    <label for="email">E-mail: </label>
+                    <input focus type="text" name="email" id="email" size="80"
+                        placeholder="Digite seu e-mail (adalberto@gmail.com)" />
 
 
-            <label for="data">Data de Nascimento: </label>
-            <input type="date" name="data" id="data" />
+                    <label for="senha">Senha: </label>
+                    <input type="password" name="senha" id="senha" size="80" placeholder="Digite sua senha" />
 
-            <fieldset>
-                <legend>Gênero</legend>
-                <input id="masc" type="radio" name="genero" value="M" />
-                <label for="masc">Masculino</label>
-                <input id="fem" type="radio" name="genero" value="F" />
-                <label for="fem">Feminino</label>
-                <input id="outro" type="radio" name="genero" value="O" />
-                <label for="outro">Outro</label>
-            </fieldset>
 
-            <label for="tipo">Como você quer fazer? </label>
-            <select name="tipo" id="tipo">
-                <option value="rapido">Rápido e Simples</option>
-                <option value="3d">Versão 3D da sua casa</option>
-                <option value="mexer">Mexer em tudo</option>
-                <option value="arrumar">Conseguir arrumar com ajuda de IA</option>
-            </select>
+                    <label for="celular">Celular: </label>
+                    <input type="tel" name="celular" id="celular" size="80" placeholder="(99) 99999-9999"
+                        pattern="^\(\d{2}\)\d{5}-\d{4}$" />
 
-            <fieldset>
-                <legend>Onde nos conheceu?</legend>
-                <input id="insta" type="checkbox" name="origem" value="instagram" />
-                <label for="insta">Instagram</label>
-                <input id="face" type="checkbox" name="origem" value="facebook" />
-                <label for="face">Facebook</label>
-                <input id="yout" type="checkbox" name="origem" value="youtube" />
-                <label for="yout">Youtube</label>
-                <input id="outro" type="checkbox" name="origem" value="outro" />
-                <label for="outro">Outro</label>
-            </fieldset>
 
-            <label for="msg">Mensagem:</label>
-            <textarea id="msg" cols="80" rows="6"></textarea>
+                    <div id="data">
+                        <label for="data">Data de Nascimento: </label>
+                        <input type="date" name="data" id="data" />
+                    </div>
+                    
 
-            <p>
-                <input type="submit" name="botao_enviar" value="Enviar" />
-                <input type="reset" name="botao_limpar" value="Limpar" />
-            </p>
+                    <fieldset>
+                        <legend>Gênero</legend>
+                        <div>
+                            <input id="masc" type="radio" name="genero" value="M" />
+                            <label for="masc">Masculino</label>
+                        </div>
+                        <div>
+                            <input id="fem" type="radio" name="genero" value="F" />
+                            <label for="fem">Feminino</label>
+                        </div>
+                        <div>
+                            <input id="outro" type="radio" name="genero" value="O" />
+                            <label for="outro">Outro</label>
+                        </div>                
+                        
+                    </fieldset>
 
-        </form>
-    </strong>
+                    <label for="tipo">Como você quer fazer? </label>
+                    <select name="tipo" id="tipo">
+                        <option value="rapido">Rápido e Simples</option>
+                        <option value="3d">Versão 3D da sua casa</option>
+                        <option value="mexer">Mexer em tudo</option>
+                        <option value="arrumar">Conseguir arrumar com ajuda de IA</option>
+                    </select>
+
+                    <fieldset>
+                        <legend>Onde nos conheceu?</legend>
+                        <div>
+                            <input id="insta" type="checkbox" name="origem" value="instagram" />
+                            <label for="insta">Instagram</label>
+                        </div>
+                        <div>
+                            <input id="face" type="checkbox" name="origem" value="facebook" />
+                            <label for="face">Facebook</label>
+                        </div>
+                        <div>
+                            <input id="yout" type="checkbox" name="origem" value="youtube" />
+                            <label for="yout">Youtube</label>
+                        </div>
+                        <div>
+                            <input id="outro" type="checkbox" name="origem" value="outro" />
+                            <label for="outro">Outro</label>
+                        </div>
+                        
+                    </fieldset>
+
+                    <label for="msg">Mensagem:</label>
+                    <textarea id="msg" cols="52" rows="6"></textarea>
+
+                    <div id="botoes-form">
+                        
+                        <input type="submit" name="botao_enviar" value="Enviar" />
+                        <input type="reset" name="botao_limpar" value="Limpar" />
+
+                    </div>
+
+                </form>
+            </strong>
+    </section>
+    
+
+    <footer>
+        <p>
+            Desenvolvido por <a class="a-nome" href="https://github.com/V1CCYY" target="_blank"><span id="negrito">Victhor Gladistone</span></a> - 2025
+        </p>
+    </footer>
 
     </body>
 
