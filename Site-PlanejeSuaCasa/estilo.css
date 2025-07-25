@@ -1,6 +1,6 @@
 /*seletor{propriedade:valor;}*/
 
-@import url('https://fonts.googleapis.com/css2?family=Galindo&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Galindo&family=Oleo+Script+Swash+Caps:wght@400;700&family=Oleo+Script:wght@400;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 *{
     margin: 0;
@@ -46,8 +46,6 @@ a{
     color: aqua;
 }
 
-
-
 article{
     width: 100%;
     background-color: #79b6a6;
@@ -56,7 +54,7 @@ article{
 }
 
 h1{
-    font: 3.5rem Forte, cursive;
+    font: 3.5rem Forte, 'Oleo Script Swash Caps', cursive;
     color: #E54158;
     text-align: center;
     margin-bottom: 30px;
@@ -84,7 +82,7 @@ section{
 }
 
 h2{
-    font: 3.5rem Forte, cursive;
+    font: 3.5rem Forte, 'Oleo Script Swash Caps', cursive;
     color: #E54158;
 }
 
@@ -131,7 +129,7 @@ li{
 }
 
 h3{
-    font: 1.5rem 'Galindo', Forte, cursive;
+    font: 1.5rem 'Galindo', 'Oleo Script Swash Caps', Forte;
     color: rgb(166, 215, 215);
     text-align: center;
 }
@@ -141,7 +139,7 @@ h3{
 }
 
 #pag-conhecacomosefaz{
-
+    background-color: #5c8b7f;
 }
 
 #pag-conhecacomosefaz p{
@@ -195,7 +193,6 @@ video{
     width: 700px;
 }
 
-
 footer{
     background-color: #ca5867;
     padding: 10px;
@@ -212,16 +209,23 @@ footer a{
     text-decoration: none;
 }
 
-footer .a:link, a:visited{
+footer a:link, a:visited{
     color: black;
 }
 
-footer a:hover, footer a:active{
+footer a:hover, a:active{
     color: #00ffff;
 }
 
 #pag-cadastro{
     background-color: #5c8b7f;
+}
+
+#pag-cadastro h1{
+    font: 3.5rem Forte, 'Oleo Script', cursive;
+    color: #E54158;
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 #pag-cadastro p{
