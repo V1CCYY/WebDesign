@@ -1,12 +1,14 @@
 /*seletor{propriedade:valor;}*/
 
+@import url('https://fonts.googleapis.com/css2?family=Galindo&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 *{
     margin: 0;
     padding: 0;
 }
 
 body{
-    background-color: #D9CDBF;
+    background-color: #5c8b7f;
 }
 
 header{
@@ -44,22 +46,11 @@ a{
     color: aqua;
 }
 
-.a-nome{
-    font: 1.2rem 'Bahnschrift Light', Arial, sans-serif;
-    text-decoration: none;
-}
 
-.a-nome:link, .a-nome:visited{
-    color: black;
-}
-
-.a-nome:hover, .a-nome:active{
-    color: aqua;
-}
 
 article{
     width: 100%;
-    background-color: #dddddd;
+    background-color: #79b6a6;
     padding: 20px;
     box-sizing: border-box;
 }
@@ -88,7 +79,8 @@ section{
 }
 
 #pag-funcoes{
-    background-color: #D9CDBFs
+    background-color: #5a9586;
+    padding: 17px;
 }
 
 h2{
@@ -98,14 +90,17 @@ h2{
 
 ul{
     list-style-type: circle;
-    padding: 20px 50px;
+    padding: 20px 50px;    
 }
 
 li{
     font: 1.3rem 'Bahnschrift Light', Arial, sans-serif;
     color: black;
     margin-bottom: 10px;
+}
 
+#pag-inspiracoes{
+    background-color: #4e897a;
 }
 
 #container{
@@ -136,8 +131,8 @@ li{
 }
 
 h3{
-    font: 1.5rem Forte, cursive;
-    color: rgb(37, 145, 145);
+    font: 1.5rem 'Galindo', Forte, cursive;
+    color: rgb(166, 215, 215);
     text-align: center;
 }
 
@@ -163,7 +158,13 @@ h3{
     padding: 40px;
 }
 
-#container-conhecacomosefaz p{
+.colunas-conhecacomosefaz p{
+    font: 1.3rem 'Bahnschrift Light', Arial, sans-serif;
+    color: #c7c7c7;
+    line-height: 25px;
+}
+
+#container-conhecacomosefaz p{  
     text-align: center;
     margin-top: 20px;
 }
@@ -175,19 +176,25 @@ h3{
     align-items: center;
 }
 
-.container-contatos p{
-    color: black;
-    padding: 10px 20px 10px 5px;
-}
-
 .img-icones{
     width: 25px;
     height: 25px;
+    padding-inline: 30px;
+    padding-right: 7px;
+}
+
+.container-contatos a:link, a:visited{
+    color: black;
+}
+
+.container-contatos a:hover, a:active{
+    color: aqua;
 }
 
 video{
-    width: 660px;
+    width: 700px;
 }
+
 
 footer{
     background-color: #ca5867;
@@ -195,6 +202,7 @@ footer{
 }
 
 footer p{
+    font: 1.2rem 'Bahnschrift Light', Arial, sans-serif;
     text-align: center;
     color: aqua;
 }
@@ -204,12 +212,16 @@ footer a{
     text-decoration: none;
 }
 
+footer .a:link, a:visited{
+    color: black;
+}
+
 footer a:hover, footer a:active{
-    color: aqua;
+    color: #00ffff;
 }
 
 #pag-cadastro{
-
+    background-color: #5c8b7f;
 }
 
 #pag-cadastro p{
@@ -229,7 +241,7 @@ input, select, textarea{
     padding-left: 5px;
     box-sizing: border-box;
     font: 1rem 'Bahnschrift Light', Arial, sans-serif;
-    border: 1px solid #e07256;
+    border: 1px solid aqua;
     background-color: none;
 }
 
@@ -238,7 +250,7 @@ label, fieldset, input, select, textarea{
 }
 
 fieldset{
-    border: 1px solid #CCCCCC;
+    border: 1px solid aqua;
     margin-bottom: 10px;
     padding: 10px;
 }
